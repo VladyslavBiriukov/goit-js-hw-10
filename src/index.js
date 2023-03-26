@@ -33,10 +33,8 @@ countriesAPI.fetchCountries(name)
         }
 
     }).catch(err => {
-        if (err) {
         countryListEl.innerHTML = '';
         countryInfoEl.innerHTML = '';
-        }
         console.log(err);
         alertWrongName();
         
