@@ -7,6 +7,7 @@ export class CountriesAPI {
 fetchCountries (name) {
     return fetch(`${this.#BASE_URL}${name}?${this.#FIELDS}`)
         .then(response => {
+            // console.log(response);
             if (!response.ok) {
             throw new Error(response.status);
         };
